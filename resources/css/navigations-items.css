@@ -1,0 +1,229 @@
+.nav-tree-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-tree-children {
+    padding-left: 2rem;
+    border-left: 2px solid var(--ztr-border);
+    margin-left: 1.1rem;
+}
+.nav-tree-item {
+    margin: 0;
+}
+.nav-tree-item + .nav-tree-item {
+    margin-top: 2px;
+}
+
+.nav-item-row {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 0.6rem;
+    background: var(--ztr-bg-card);
+    border: 1px solid var(--ztr-border);
+    border-radius: 5px;
+    transition: border-color 0.15s;
+    min-height: 40px;
+}
+.nav-item-row:hover {
+    border-color: var(--ztr-purple-700);
+}
+.nav-item-inactive .nav-item-title {
+    color: var(--ztr-text-dim) !important;
+}
+.nav-item-inactive {
+    opacity: 0.7;
+}
+
+.nav-drag-handle {
+    cursor: grab;
+    color: var(--ztr-text-dim);
+    font-size: 0.9rem;
+    flex-shrink: 0;
+    padding: 0 0.1rem;
+}
+.nav-drag-handle:active {
+    cursor: grabbing;
+}
+
+.nav-item-toggle {
+    background: none;
+    border: none;
+    color: var(--ztr-text-muted);
+    padding: 0;
+    width: 16px;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.nav-item-toggle.collapsed {
+    transform: rotate(-90deg);
+}
+
+.nav-item-title {
+    font-size: 0.875rem;
+    color: var(--ztr-text);
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.nav-item-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    flex-shrink: 0;
+}
+
+.doc-search-dropdown {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    right: 0;
+    z-index: 1055;
+    background: var(--ztr-bg-card);
+    border: 1px solid var(--ztr-purple-700);
+    border-radius: 6px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    max-height: 240px;
+    overflow-y: auto;
+    padding: 0.25rem 0;
+}
+.doc-search-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+    min-width: 0;
+}
+.doc-search-item + .doc-search-item {
+    border-top: 1px solid var(--ztr-border);
+}
+.doc-search-item:hover {
+    background: var(--ztr-bg-active);
+}
+.doc-search-title {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--ztr-text);
+}
+.doc-search-url {
+    color: var(--ztr-text-muted);
+    font-size: 0.8rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+.doc-search-draft {
+    font-size: 0.7rem;
+    padding: 1px 6px;
+    border-radius: 4px;
+    background: rgba(251, 191, 36, 0.15);
+    color: #fbbf24;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.sortable-ghost > .nav-item-row {
+    opacity: 0.4;
+    border-style: dashed;
+    border-color: var(--ztr-purple-500);
+}
+.sortable-chosen > .nav-item-row {
+    border-color: var(--ztr-purple-500);
+    background: var(--ztr-bg-active);
+}
+.sortable-drag > .nav-item-row {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.ztr-nav-info-alert {
+    font-size: 0.8rem;
+}
+.ztr-nav-info-alert-label {
+    white-space: nowrap;
+}
+.ztr-nav-level-badge {
+    font-weight: 500;
+    font-size: 0.72rem;
+    background: rgba(124, 92, 191, 0.25);
+    color: var(--ztr-purple-light);
+}
+.ztr-nav-level-badge-l2 {
+    background: rgba(124, 92, 191, 0.18);
+}
+.ztr-nav-level-badge-l3 {
+    background: rgba(124, 92, 191, 0.12);
+}
+.ztr-nav-level-sep {
+    color: var(--ztr-text-muted);
+}
+.ztr-nav-info-hint {
+    color: var(--ztr-text-muted);
+    white-space: nowrap;
+}
+
+.ztr-nav-empty-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.ztr-nav-toggle-chevron {
+    font-size: 0.6rem;
+}
+
+.ztr-nav-label-hint {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.ztr-nav-extra-html-input {
+    font-size: 0.8rem;
+}
+.ztr-nav-upload-btn {
+    white-space: nowrap;
+}
+
+.ztr-nav-img-preview-wrap {
+    display: none;
+    flex-shrink: 0;
+    position: relative;
+}
+.ztr-nav-img-preview-wrap.ztr-nav-img-visible {
+    display: block;
+}
+.ztr-nav-img-preview {
+    max-width: 80px;
+    max-height: 80px;
+    object-fit: contain;
+    border-radius: 4px;
+    border: 1px solid var(--ztr-border);
+    display: block;
+}
+.ztr-nav-img-clear {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #ef4444;
+    border: none;
+    color: #fff;
+    font-size: 0.75rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+}
+
+.ztr-nav-modal-hint {
+    font-size: 0.8rem;
+}

@@ -1,0 +1,53 @@
+services:
+
+  app:
+    build:
+      context: .
+      dockerfile: docker/php/Dockerfile
+    container_name: zentra_app
+    restart: unless-stopped
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      database:
+        condition: service_healthy
+    networks:
+      - zentra
+
+  database:
+    image: postgres:16-alpine
+    container_name: zentra_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: zentra
+      POSTGRES_USER: zentra
+      POSTGRES_PASSWORD: secret
+    volumes:
+      - zentra_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U zentra -d zentra"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    networks:
+      - zentra
+
+  nginx:
+    image: nginx:1.25-alpine
+    container_name: zentra_nginx
+    restart: unless-stopped
+    ports:
+      - "8000:80"
+    volumes:
+      - .:/var/www/html
+      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - app
+    networks:
+      - zentra
+
+volumes:
+  zentra_pgdata:
+
+networks:
+  zentra:
