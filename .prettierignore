@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Build output
+public/build/
+public/hot/
+public/storage/
+
+# Third-party assets (not ours to format)
+public/assets/vendor/
+resources/js/bootstrap-icons-list.js
+
+# Laravel cache
+storage/
+bootstrap/cache/
+
+# Generated files
+*.min.js
+*.min.css

@@ -1,0 +1,111 @@
+name: Build Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          extensions: pdo, pdo_pgsql, mbstring, openssl, zip, gd, bcmath, exif
+          coverage: none
+
+      - name: Update Composer dependencies to latest (production)
+        run: composer update --no-dev --optimize-autoloader --no-interaction --prefer-dist
+
+      - name: Set VERSION from tag
+        run: echo "${GITHUB_REF_NAME#v}" > VERSION
+
+      - name: Build release archive
+        run: |
+          TAG=${GITHUB_REF_NAME}
+          ARCHIVE_NAME="zentra-cmf-${TAG}"
+          DEST="/tmp/zentra"
+
+          rsync -a \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='.env' \
+            --exclude='.env.backup' \
+            --exclude='.env.production' \
+            --exclude='node_modules' \
+            --exclude='docker' \
+            --exclude='docker-compose.yml' \
+            --exclude='Makefile' \
+            --exclude='tests' \
+            --exclude='phpunit.xml' \
+            --exclude='.phpunit.result.cache' \
+            --exclude='.phpunit.cache' \
+            --exclude='package.json' \
+            --exclude='package-lock.json' \
+            --exclude='vite.config.js' \
+            --exclude='.php-cs-fixer.php' \
+            --exclude='.php-cs-fixer.cache' \
+            --exclude='.prettierrc' \
+            --exclude='.prettierignore' \
+            --exclude='eslint.config.js' \
+            --exclude='.eslintcache' \
+            --exclude='.prettier-cache' \
+            --exclude='auth.json' \
+            --exclude='.DS_Store' \
+            --exclude='Thumbs.db' \
+            --exclude='storage/logs/*' \
+            --exclude='storage/app/private/*' \
+            --exclude='storage/app/backups/*' \
+            --exclude='storage/framework/cache/data/*' \
+            --exclude='storage/framework/sessions/*' \
+            --exclude='storage/framework/views/*' \
+            --exclude='public/hot' \
+            --exclude='public/storage' \
+            --exclude='public/assets/js/app.js' \
+            --exclude='public/assets/js/docs.js' \
+            --exclude='public/assets/css/app.css' \
+            --exclude='public/assets/css/docs.css' \
+            --exclude='public/favicon.ico' \
+            --exclude='public/apple-touch-icon*.png' \
+            --exclude='public/apple-touch-icon-precomposed.png' \
+            ./ "${DEST}/"
+
+          # Ensure empty runtime directories exist in the archive
+          mkdir -p "${DEST}/storage/logs"
+          mkdir -p "${DEST}/storage/app/private"
+          mkdir -p "${DEST}/storage/app/backups"
+          mkdir -p "${DEST}/storage/framework/cache/data"
+          mkdir -p "${DEST}/storage/framework/sessions"
+          mkdir -p "${DEST}/storage/framework/views"
+          mkdir -p "${DEST}/bootstrap/cache"
+
+          cd /tmp/zentra
+          zip -r "/tmp/${ARCHIVE_NAME}.zip" .
+          echo "ARCHIVE=/tmp/${ARCHIVE_NAME}.zip" >> $GITHUB_ENV
+
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ${{ env.ARCHIVE }}
+          generate_release_notes: false
+          body: |
+            Если вы загружаете файлы на shared-хостинг, тогда скачайте архив и распакуйте файлы на сервер.
+
+            [Документация по установке](https://zentra-cmf.ru/docs/setup/requirements.html)
+          prerelease: ${{ contains(github.ref_name, '-') }}
+
+      - name: Delete old releases
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release list --limit 100 --json tagName,createdAt \
+            | jq -r 'sort_by(.createdAt) | reverse | .[1:] | .[].tagName' \
+            | xargs -I {} gh release delete {} --yes

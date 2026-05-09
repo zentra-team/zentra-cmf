@@ -1,0 +1,193 @@
+.block-group-section {
+    margin-bottom: 0.5rem;
+    border: 1px solid var(--ztr-border);
+    border-radius: 6px;
+    overflow: hidden;
+}
+.block-group-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.55rem 1rem 0.55rem 0.875rem;
+    background: linear-gradient(90deg, rgba(124, 92, 191, 0.18) 0%, rgba(124, 92, 191, 0.06) 100%);
+    border-left: 3px solid var(--ztr-purple);
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.15s;
+}
+.block-group-header:hover {
+    background: linear-gradient(90deg, rgba(124, 92, 191, 0.28) 0%, rgba(124, 92, 191, 0.1) 100%);
+}
+.block-group-header .bi-chevron-down {
+    color: var(--ztr-purple);
+    font-size: 0.65rem;
+    transition: transform 0.2s;
+}
+.block-group-header.collapsed .bi-chevron-down {
+    transform: rotate(-90deg);
+}
+.block-group-header .group-title {
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+.block-group-header .group-count {
+    font-size: 0.75rem;
+    color: var(--ztr-text-muted);
+}
+.block-group-header .group-desc {
+    font-size: 0.75rem;
+    color: var(--ztr-text-dim);
+    margin-left: 0.5rem;
+}
+.block-group-body {
+    border-top: 1px solid var(--ztr-border);
+    background: rgba(255, 255, 255, 0.02);
+}
+.block-group-body table {
+    margin: 0;
+}
+.block-group-body table tr:last-child td {
+    border-bottom: 0;
+}
+
+.group-drag-handle {
+    cursor: grab;
+    color: var(--ztr-text-muted);
+}
+.group-drag-handle:active {
+    cursor: grabbing;
+}
+
+.ztr-nowrap {
+    white-space: nowrap;
+}
+
+.ztr-blocks-card-header {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.ztr-blocks-table {
+    table-layout: fixed;
+}
+.ztr-blocks-table th.ztr-blocks-col-id,
+.ztr-blocks-groups-table th.ztr-blocks-col-id {
+    width: 40px;
+}
+.ztr-blocks-table th.ztr-blocks-col-type {
+    width: 110px;
+}
+.ztr-blocks-type-badge {
+    font-size: 0.7rem;
+    padding: 0.3em 0.55em;
+    font-weight: 500;
+}
+.ztr-blocks-table th.ztr-blocks-col-title {
+    width: 260px;
+}
+.ztr-blocks-table th.ztr-blocks-col-tag {
+    width: 240px;
+}
+.ztr-blocks-table th.ztr-blocks-col-actions {
+    width: 160px;
+}
+.ztr-blocks-table td.ztr-blocks-title-cell,
+.ztr-blocks-table td.ztr-blocks-tag-cell {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ztr-blocks-table td.ztr-blocks-desc {
+    white-space: normal;
+    word-break: break-word;
+}
+.ztr-blocks-table > :not(caption) > * > td.text-end,
+.ztr-blocks-table > :not(caption) > * > th.ztr-blocks-col-actions {
+    padding-right: 1.25rem;
+}
+.ztr-blocks-groups-table th.ztr-blocks-col-drag {
+    width: 32px;
+}
+.ztr-blocks-groups-table th.ztr-blocks-col-count {
+    width: 80px;
+}
+.ztr-blocks-groups-table th.ztr-blocks-col-group-actions {
+    width: 110px;
+}
+.ztr-blocks-groups-table td.ztr-blocks-col-desc {
+    width: 100%;
+}
+
+.ztr-blocks-title-link {
+    color: var(--ztr-text);
+}
+.ztr-blocks-desc {
+    font-size: 0.8rem;
+}
+.ztr-blocks-tag {
+    font-size: 0.8rem;
+}
+.ztr-blocks-copy-icon {
+    font-size: 0.8rem;
+}
+.block-group-header .bi-chevron-down {
+    font-size: 0.65rem;
+}
+
+.ztr-blocks-empty-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.ztr-blocks-create-form {
+    max-width: 520px;
+}
+.ztr-blocks-tag-preview {
+    font-size: 0.8rem;
+}
+
+.ztr-blocks-type-warning {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.625rem;
+    padding: 0.65rem 0.85rem;
+    background: rgba(234, 179, 8, 0.08);
+    border: 1px solid rgba(234, 179, 8, 0.25);
+    border-left: 3px solid #eab308;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    color: var(--ztr-text-muted);
+    line-height: 1.45;
+}
+.ztr-blocks-type-warning .bi-exclamation-triangle-fill {
+    color: #eab308;
+    font-size: 1rem;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+}
+.ztr-blocks-type-warning strong {
+    color: var(--ztr-text);
+    display: block;
+    margin-bottom: 0.15rem;
+}
+
+.ztr-blocks-group-title-input {
+    min-width: 200px;
+}
+.ztr-blocks-group-desc-input {
+    min-width: 300px;
+}
+
+.ztr-blocks-add-group-card {
+    background: var(--ztr-bg-card);
+}
+.ztr-blocks-small-label {
+    font-size: 0.8rem;
+}
+.ztr-blocks-input-title {
+    width: 220px;
+}
+.ztr-blocks-input-desc {
+    width: 300px;
+}
