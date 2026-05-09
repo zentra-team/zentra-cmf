@@ -1,0 +1,147 @@
+.ztr-api-info-banner {
+    margin-bottom: 1rem;
+}
+
+.ztr-api-stats .card {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.ztr-api-search-toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    color: var(--bs-body-color);
+}
+.ztr-api-search-toggle:hover {
+    color: var(--bs-primary);
+}
+
+.ztr-api-bulk-bar {
+    background: rgba(13, 110, 253, 0.08);
+    border-bottom: 1px solid rgba(13, 110, 253, 0.2);
+}
+
+.ztr-api-empty-icon {
+    font-size: 3rem;
+    opacity: 0.3;
+}
+
+.ztr-api-table {
+    font-size: 0.92rem;
+}
+.ztr-api-table th {
+    white-space: nowrap;
+    background: rgba(255, 255, 255, 0.02);
+    font-weight: 500;
+}
+.ztr-api-col-checkbox {
+    width: 36px;
+}
+.ztr-api-col-rubrics {
+    width: 130px;
+}
+.ztr-api-col-rate {
+    width: 100px;
+    text-align: center;
+}
+.ztr-api-col-hits {
+    width: 100px;
+    text-align: right;
+}
+.ztr-api-col-last,
+.ztr-api-col-status {
+    width: 130px;
+}
+.ztr-api-col-actions {
+    width: 100px;
+}
+
+.ztr-api-table tbody tr td:last-child {
+    white-space: nowrap;
+    text-align: right;
+}
+.ztr-api-table tbody tr td:last-child .btn + .btn {
+    margin-left: 0.25rem;
+}
+
+.ztr-api-token-name {
+    font-weight: 500;
+}
+.ztr-api-token-prefix code {
+    background: rgba(13, 110, 253, 0.08);
+    padding: 1px 6px;
+    border-radius: 3px;
+}
+.ztr-api-token-desc {
+    max-width: 420px;
+}
+.ztr-api-token-inactive {
+    opacity: 0.55;
+}
+.ztr-api-rubrics-list {
+    cursor: help;
+    border-bottom: 1px dotted var(--bs-secondary);
+}
+
+.ztr-api-pagination {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.ztr-api-token-revealed {
+    border-left: 4px solid #f0ad4e;
+}
+.ztr-api-token-plain-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.35rem;
+    font-size: 1rem;
+}
+.ztr-api-token-plain-row code {
+    flex: 1 1 auto;
+    word-break: break-all;
+    color: #ffd966;
+    background: transparent;
+    font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+}
+
+.ztr-api-token-mask {
+    background: rgba(13, 110, 253, 0.08);
+    padding: 0.55rem 0.7rem;
+    border-radius: 0.35rem;
+    font-size: 1rem;
+}
+.ztr-api-token-mask code {
+    color: var(--bs-body-color);
+    background: transparent;
+}
+
+.ztr-api-rubrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 0.35rem 0.75rem;
+    max-height: 360px;
+    overflow-y: auto;
+    padding: 0.25rem;
+}
+
+.ztr-api-audit-table th {
+    width: 60%;
+    font-weight: 400;
+    color: var(--bs-secondary);
+}
+
+.ztr-api-form-bottom-actions {
+    position: sticky;
+    bottom: 0;
+    padding: 1rem 0;
+    background: var(--bs-body-bg);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    z-index: 5;
+}

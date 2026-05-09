@@ -1,0 +1,44 @@
+.ztr-content {
+    padding: 0 !important;
+}
+.ztr-footer {
+    display: none;
+}
+.file-editor-wrap {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - var(--ztr-header-h));
+}
+.file-editor-topbar {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 0.625rem 1rem;
+    background: var(--ztr-bg-surface);
+    border-bottom: 1px solid var(--ztr-border);
+    flex-shrink: 0;
+}
+.file-editor-label {
+    padding: 0.3rem 1rem;
+    background: var(--ztr-bg-card);
+    border-bottom: 1px solid var(--ztr-border);
+    font-size: 0.7rem;
+    color: var(--ztr-text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+#aceFileEditor {
+    flex: 1;
+    min-height: 0;
+    font-size: 13px;
+}
+
+.ztr-lef-path {
+    font-size: 0.8rem;
+}
+
+.ztr-lef-save-form {
+    display: none;
+}

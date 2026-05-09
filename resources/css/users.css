@@ -1,0 +1,141 @@
+.ztr-hidden {
+    display: none;
+}
+
+.ztr-search-toggle {
+    cursor: pointer;
+    user-select: none;
+}
+.ztr-search-icon {
+    font-size: 0.85rem;
+    color: var(--ztr-text-muted);
+}
+.ztr-search-label {
+    font-size: 0.82rem;
+    color: var(--ztr-text-muted);
+}
+.ztr-search-chevron {
+    font-size: 0.65rem;
+    color: var(--ztr-text-dim);
+    transition: transform 0.2s;
+}
+
+.ztr-search-label-sm {
+    font-size: 0.78rem;
+}
+
+.ztr-col-id {
+    width: 60px;
+}
+.ztr-col-group {
+    width: 180px;
+}
+.ztr-col-last-login {
+    width: 150px;
+}
+.ztr-col-created {
+    width: 120px;
+}
+.ztr-col-actions {
+    width: 100px;
+    white-space: nowrap;
+}
+
+.ztr-cell-email {
+    font-size: 0.75rem;
+    color: var(--ztr-text-muted);
+}
+.ztr-cell-time {
+    font-size: 0.8rem;
+    color: var(--ztr-text-muted);
+}
+.ztr-cell-nowrap {
+    white-space: nowrap;
+}
+
+.ztr-badge-sm {
+    font-size: 0.65rem;
+}
+
+.ztr-create-form {
+    max-width: 480px;
+}
+
+.ztr-save-status {
+    font-size: 0.75rem;
+    color: var(--ztr-text-muted);
+}
+
+.ztr-spacer-label {
+    visibility: hidden;
+}
+.ztr-spacer-row {
+    height: 38px;
+}
+
+.ztr-last-login {
+    font-size: 0.78rem;
+}
+
+.ztr-group-label {
+    font-size: 0.875rem;
+}
+
+.ztr-gi-col-id {
+    width: 60px;
+}
+.ztr-gi-col-users {
+    width: 130px;
+    text-align: center;
+}
+.ztr-gi-col-actions {
+    width: 100px;
+    white-space: nowrap;
+}
+.ztr-gi-cell-center {
+    text-align: center;
+}
+.ztr-gi-cell-actions {
+    white-space: nowrap;
+}
+
+.ztr-gi-btn-disabled {
+    pointer-events: none;
+}
+
+.ztr-gi-create-form {
+    max-width: 480px;
+}
+
+.ztr-gi-modal-text {
+    font-size: 0.8rem;
+}
+
+.ztr-ge-desc {
+    font-size: 0.75rem;
+    color: var(--ztr-text-muted);
+}
+
+.ztr-ge-perm-title {
+    color: var(--ztr-text-muted);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.ztr-ge-perm-badge {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+}
+.ztr-ge-perm-chevron {
+    font-size: 0.6rem;
+}
+.ztr-ge-perm-badge-active {
+    font-size: 0.65rem;
+    background: var(--ztr-purple-700) !important;
+}
+
+.ztr-ge-perm-desc {
+    font-size: 0.75rem;
+    color: var(--ztr-text-muted);
+}

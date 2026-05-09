@@ -1,0 +1,236 @@
+.ztr-db-search-toggle {
+    cursor: pointer;
+    user-select: none;
+}
+.ztr-db-search-icon {
+    font-size: 0.85rem;
+    color: var(--ztr-text-muted);
+}
+.ztr-db-search-label {
+    font-size: 0.82rem;
+    color: var(--ztr-text-muted);
+}
+.ztr-db-search-chevron {
+    font-size: 0.65rem;
+    color: var(--ztr-text-dim);
+    transition: transform 0.2s;
+}
+
+.ztr-db-card {
+    background: var(--ztr-bg-sidebar);
+    border: 1px solid var(--ztr-border);
+}
+.ztr-db-card-danger {
+    background: var(--ztr-bg-sidebar);
+    border: 1px solid #5c2020;
+}
+.ztr-db-card-warning {
+    background: var(--ztr-bg-sidebar);
+    border: 1px solid #4a3c10;
+}
+.ztr-db-card-info {
+    background: var(--ztr-bg-sidebar);
+    border: 1px solid #1a3a4a;
+}
+
+.ztr-db-fs-68 {
+    font-size: 0.68rem;
+}
+.ztr-db-fs-72 {
+    font-size: 0.72rem;
+}
+.ztr-db-fs-75 {
+    font-size: 0.75rem;
+}
+.ztr-db-fs-78 {
+    font-size: 0.78rem;
+}
+.ztr-db-fs-80 {
+    font-size: 0.8rem;
+}
+.ztr-db-fs-82 {
+    font-size: 0.82rem;
+}
+.ztr-db-fs-85 {
+    font-size: 0.85rem;
+}
+.ztr-db-fs-88 {
+    font-size: 0.88rem;
+}
+.ztr-db-fs-90 {
+    font-size: 0.9rem;
+}
+.ztr-db-fs-100 {
+    font-size: 1rem;
+}
+.ztr-db-fs-110 {
+    font-size: 1.1rem;
+}
+.ztr-db-fs-120 {
+    font-size: 1.2rem;
+}
+
+.ztr-db-stat-label {
+    font-size: 0.72rem;
+    line-height: 1.2;
+}
+
+.ztr-db-legend-text {
+    font-size: 0.78rem;
+    color: var(--ztr-text);
+}
+
+.ztr-db-legend-btn {
+    font-size: 0.72rem;
+    pointer-events: none;
+    min-width: 24px;
+}
+
+.ztr-db-legend-sep {
+    border-right: 1px solid var(--ztr-border);
+}
+
+.ztr-db-hr {
+    border-color: var(--ztr-border);
+}
+
+.ztr-db-color-purple {
+    color: #7c5cbf;
+}
+.ztr-db-color-blue {
+    color: #5c8cbf;
+}
+.ztr-db-color-green {
+    color: #5cbf8c;
+}
+.ztr-db-color-red {
+    color: #e06060;
+}
+.ztr-db-color-yellow {
+    color: #c8a840;
+}
+.ztr-db-color-info {
+    color: #5b9fbf;
+}
+.ztr-db-color-amber {
+    color: #bfaa5c;
+}
+.ztr-db-color-orange {
+    color: #bf7c5c;
+}
+.ztr-db-color-coral {
+    color: #bf5c5c;
+}
+
+.ztr-db-ref-label {
+    color: var(--ztr-purple-400);
+}
+
+.ztr-db-badge-danger {
+    background: #5c2020;
+    color: #f88;
+    font-size: 0.68rem;
+}
+.ztr-db-badge-warning {
+    background: #4a3c10;
+    color: #c8a840;
+    font-size: 0.68rem;
+}
+
+.ztr-db-hint-success {
+    color: var(--ztr-success);
+    font-size: 0.72rem;
+}
+.ztr-db-hint-danger {
+    color: var(--ztr-danger);
+    font-size: 0.72rem;
+}
+
+.ztr-db-col-name {
+    width: 160px;
+    max-width: 160px;
+}
+.ztr-db-col-rows {
+    width: 90px;
+}
+.ztr-db-col-dead {
+    width: 90px;
+}
+.ztr-db-col-size {
+    width: 80px;
+}
+.ztr-db-col-vacuum {
+    width: 110px;
+}
+.ztr-db-col-analyze {
+    width: 110px;
+}
+.ztr-db-col-actions-tables {
+    width: 150px;
+    white-space: nowrap;
+}
+.ztr-db-col-backup-size {
+    width: 110px;
+}
+.ztr-db-col-backup-date {
+    width: 160px;
+}
+.ztr-db-col-backup-actions {
+    width: 180px;
+    white-space: nowrap;
+}
+
+.ztr-db-filter-input {
+    width: 220px;
+}
+.ztr-db-sort-select {
+    width: 210px;
+}
+.ztr-db-upload-input {
+    max-width: 340px;
+}
+
+.ztr-db-cell-filename {
+    font-family: monospace;
+    font-size: 0.82rem;
+    max-width: 260px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ztr-db-cell-muted {
+    font-size: 0.82rem;
+    color: var(--ztr-text-muted);
+}
+.ztr-db-cell-muted-nowrap {
+    font-size: 0.82rem;
+    color: var(--ztr-text-muted);
+    white-space: nowrap;
+}
+
+.ztr-db-nowrap {
+    white-space: nowrap;
+}
+
+.ztr-db-full-width {
+    width: 100%;
+}
+
+.ztr-db-create-container {
+    max-width: 500px;
+}
+
+.ztr-db-input-suffix {
+    background: var(--ztr-bg-input);
+    border-color: var(--ztr-border);
+    color: var(--ztr-text-muted);
+}
+
+.ztr-db-ol-spacing {
+    line-height: 1.8;
+}
+
+.ztr-db-hidden {
+    display: none;
+}
