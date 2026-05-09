@@ -1,0 +1,38 @@
+.ztr-nav-tab-header {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.ztr-nav-empty-text {
+    font-size: 0.875rem;
+}
+
+.ztr-nav-col-id {
+    width: 50px;
+}
+.ztr-nav-col-tag {
+    width: 220px;
+}
+.ztr-nav-col-actions {
+    width: 200px;
+}
+
+.ztr-nav-tag-code {
+    font-size: 0.8rem;
+}
+
+.ztr-nav-copy-icon {
+    font-size: 0.8rem;
+}
+
+.ztr-nav-actions-cell {
+    white-space: nowrap;
+}
+
+.ztr-nav-create-form {
+    max-width: 480px;
+}
+
+.ztr-nav-modal-hint {
+    font-size: 0.8rem;
+}

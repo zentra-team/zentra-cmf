@@ -1,0 +1,130 @@
+.sortable-ghost {
+    opacity: 0.4;
+    background: var(--ztr-bg-hover);
+}
+
+.field-drag-handle {
+    cursor: grab;
+    color: var(--ztr-text-dim);
+    padding: 0 0.25rem;
+}
+.field-drag-handle:active {
+    cursor: grabbing;
+}
+
+.tbl-input {
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 0.2rem 0.4rem;
+    color: inherit;
+    font-size: 0.8125rem;
+    width: 100%;
+    transition:
+        border-color 0.15s,
+        background 0.15s;
+}
+.tbl-input:hover {
+    border-color: var(--ztr-border);
+    background: var(--ztr-bg-hover);
+}
+.tbl-input:focus {
+    border-color: var(--ztr-purple-500, #7c3aed);
+    background: var(--ztr-bg-card);
+    outline: none;
+}
+
+.field-alias-cell {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: monospace;
+    font-size: 0.8rem;
+    color: var(--ztr-purple-400, #a78bfa);
+    white-space: nowrap;
+}
+
+.field-type-link {
+    cursor: pointer;
+    text-decoration: underline dashed;
+    font-size: 0.8rem;
+    color: var(--ztr-text-muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+}
+.ztr-rubrics-fields-table td.ztr-rubrics-fields-col-type {
+    max-width: 150px;
+    overflow: hidden;
+}
+.field-type-select {
+    display: none;
+}
+
+.add-field-section {
+    background: var(--ztr-bg-surface);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+}
+
+.ztr-rubrics-fields-smaller {
+    font-size: 0.875rem;
+}
+.ztr-rubrics-fields-small {
+    font-size: 0.8rem;
+}
+.ztr-rubrics-fields-xs {
+    font-size: 0.75rem;
+    color: var(--ztr-text-dim);
+}
+
+.ztr-rubrics-fields-table {
+    table-layout: fixed;
+}
+.ztr-rubrics-fields-table th.ztr-rubrics-fields-col-drag {
+    width: 24px;
+}
+.ztr-rubrics-fields-table th.ztr-rubrics-fields-col-id {
+    width: 40px;
+}
+.ztr-rubrics-fields-table th.ztr-rubrics-fields-col-alias {
+    width: 160px;
+}
+.ztr-rubrics-fields-table th.ztr-rubrics-fields-col-title {
+    width: 200px;
+}
+.ztr-rubrics-fields-table th.ztr-rubrics-fields-col-type {
+    width: 150px;
+}
+.ztr-rubrics-fields-table th.ztr-rubrics-fields-col-inapi {
+    width: 60px;
+}
+.ztr-rubrics-fields-table th.ztr-rubrics-fields-col-actions {
+    width: 80px;
+}
+
+.field-type-select-auto {
+    width: 100%;
+    max-width: 130px;
+}
+.field-type-ok-compact {
+    padding: 0.15rem 0.4rem;
+}
+
+.ztr-rubrics-fields-add-row {
+    max-width: 960px;
+}
+.ztr-rubrics-fields-add-title {
+    max-width: 320px;
+}
+.ztr-rubrics-fields-type-select {
+    width: 300px;
+}
+
+.ztr-rubrics-fields-modal-dialog {
+    max-width: 440px;
+}
+.ztr-rubrics-fields-options-textarea {
+    font-size: 0.8125rem;
+}

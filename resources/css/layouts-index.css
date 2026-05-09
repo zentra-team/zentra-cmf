@@ -1,0 +1,43 @@
+.ztr-li-card-header {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.ztr-li-col-id {
+    width: 50px;
+}
+.ztr-li-col-rubrics {
+    width: 120px;
+}
+.ztr-li-col-actions {
+    width: 160px;
+}
+
+.ztr-li-empty {
+    font-size: 0.875rem;
+}
+.ztr-li-dash {
+    font-size: 0.8rem;
+}
+
+.ztr-li-create-form {
+    max-width: 480px;
+}
+
+.ztr-li-modal-copy {
+    max-width: 420px;
+}
+.ztr-li-modal-delete {
+    --bs-modal-width: 360px;
+}
+
+.ztr-li-copy-source {
+    font-size: 0.875rem;
+}
+.ztr-li-copy-error {
+    font-size: 0.8rem;
+    display: none;
+}
+.ztr-li-delete-body {
+    font-size: 0.875rem;
+}

@@ -1,0 +1,164 @@
+.ztr-log-badge-count {
+    font-size: 0.65rem;
+}
+.ztr-log-badge-type {
+    font-size: 0.68rem;
+}
+
+.ztr-log-search-toggle {
+    cursor: pointer;
+    user-select: none;
+    background: rgba(124, 58, 237, 0.05);
+    transition: background 0.15s;
+}
+.ztr-log-search-toggle:hover {
+    background: rgba(124, 58, 237, 0.09);
+}
+.ztr-log-search-icon {
+    font-size: 0.85rem;
+    color: var(--ztr-purple-400);
+}
+.ztr-log-search-label {
+    font-size: 0.82rem;
+    color: var(--ztr-text);
+}
+.ztr-log-search-chevron {
+    font-size: 0.65rem;
+    color: var(--ztr-text-dim);
+    transition: transform 0.2s;
+}
+
+.ztr-log-filter {
+    border-color: var(--ztr-border) !important;
+    background: var(--ztr-bg-sidebar);
+}
+.ztr-log-toolbar {
+    border-color: var(--ztr-border) !important;
+}
+.ztr-log-filter-label {
+    font-size: 0.75rem;
+}
+
+.ztr-log-input-search {
+    width: 320px;
+}
+.ztr-log-select-user,
+.ztr-log-select-action {
+    width: 160px;
+}
+.ztr-log-select-pp {
+    width: 80px;
+}
+.ztr-log-select-db-level {
+    width: 130px;
+}
+.ztr-log-select-log-file {
+    width: 240px;
+}
+.ztr-log-select-fw-level {
+    width: 230px;
+}
+
+.ztr-log-col-id {
+    width: 60px;
+}
+.ztr-log-col-date {
+    width: 155px;
+    white-space: nowrap;
+}
+.ztr-log-col-user {
+    width: 140px;
+}
+.ztr-log-col-ip {
+    width: 100px;
+}
+.ztr-log-col-ip-wide {
+    width: 110px;
+}
+.ztr-log-col-type {
+    width: 90px;
+}
+.ztr-log-col-object {
+    width: 200px;
+}
+.ztr-log-col-wide {
+    width: 220px;
+}
+
+.ztr-log-date {
+    font-size: 0.78rem;
+    color: var(--ztr-text-muted);
+    white-space: nowrap;
+}
+.ztr-log-ip {
+    font-size: 0.78rem;
+    color: var(--ztr-text-muted);
+    font-family: monospace;
+}
+.ztr-log-muted-sm {
+    font-size: 0.78rem;
+    color: var(--ztr-text-muted);
+}
+.ztr-log-text-md {
+    font-size: 0.82rem;
+}
+.ztr-log-text-md-break {
+    font-size: 0.82rem;
+    word-break: break-all;
+}
+.ztr-log-action {
+    font-size: 0.85rem;
+}
+.ztr-log-referer {
+    font-size: 0.75rem;
+    color: var(--ztr-text-muted);
+    word-break: break-all;
+}
+.ztr-log-context {
+    font-size: 0.75rem;
+    color: var(--ztr-text-muted);
+}
+.ztr-log-obj-title {
+    color: var(--ztr-text-base);
+}
+.ztr-log-sql {
+    font-size: 0.72rem;
+    color: var(--ztr-purple-400);
+    word-break: break-all;
+}
+.ztr-log-location {
+    font-size: 0.72rem;
+    color: var(--ztr-purple-400);
+    font-family: monospace;
+    margin-top: 0.2rem;
+}
+
+.ztr-log-fw-table {
+    font-size: 0.8rem;
+}
+.ztr-log-fw-date {
+    color: var(--ztr-text-muted);
+    white-space: nowrap;
+    font-family: monospace;
+    font-size: 0.75rem;
+}
+.ztr-log-shown-count {
+    font-size: 0.75rem;
+}
+
+.ztr-log-modal-filename {
+    background: var(--ztr-bg-sidebar);
+    border: 1px solid var(--ztr-border);
+    font-family: monospace;
+    font-size: 0.85rem;
+    color: var(--ztr-purple-400);
+}
+.ztr-log-modal-list {
+    font-size: 0.875rem;
+    line-height: 1.8;
+}
+.ztr-log-modal-warning {
+    background: rgba(239, 68, 68, 0.08);
+    border: 1px solid rgba(239, 68, 68, 0.25);
+    font-size: 0.82rem;
+}

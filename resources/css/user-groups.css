@@ -1,0 +1,62 @@
+.ztr-gi-col-id {
+    width: 60px;
+}
+.ztr-gi-col-users {
+    width: 130px;
+    text-align: center;
+}
+.ztr-gi-col-actions {
+    width: 100px;
+    white-space: nowrap;
+}
+.ztr-gi-cell-center {
+    text-align: center;
+}
+.ztr-gi-cell-actions {
+    white-space: nowrap;
+}
+
+.ztr-gi-btn-disabled {
+    pointer-events: none;
+}
+
+.ztr-gi-create-form {
+    max-width: 480px;
+}
+
+.ztr-gi-modal-text {
+    font-size: 0.8rem;
+}
+
+.ztr-ge-desc {
+    font-size: 0.75rem;
+    color: var(--ztr-text-muted);
+}
+
+.ztr-ge-perm-title {
+    color: var(--ztr-text-muted);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.ztr-ge-perm-badge {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+}
+.ztr-ge-perm-badge-on {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+}
+.ztr-ge-perm-chevron {
+    font-size: 0.6rem;
+}
+.ztr-ge-perm-badge-active {
+    font-size: 0.65rem;
+    background: var(--ztr-purple-700) !important;
+}
+
+.ztr-ge-perm-desc {
+    font-size: 0.75rem;
+    color: var(--ztr-text-muted);
+}
