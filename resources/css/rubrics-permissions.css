@@ -1,0 +1,23 @@
+.ztr-rubrics-perms-empty {
+    font-size: 0.875rem;
+}
+
+.ztr-rubrics-perms-table th.ztr-rubrics-perms-col-group {
+    min-width: 160px;
+}
+.ztr-rubrics-perms-table th.ztr-rubrics-perms-col-checkbox {
+    width: 80px;
+}
+.ztr-rubrics-perms-table th.ztr-rubrics-perms-col-create {
+    width: 110px;
+}
+.ztr-rubrics-perms-table th.ztr-rubrics-perms-col-edit {
+    width: 100px;
+}
+.ztr-rubrics-perms-table th.ztr-rubrics-perms-col-revisions {
+    width: 90px;
+}
+
+.ztr-rubrics-perms-group-name {
+    font-size: 0.875rem;
+}

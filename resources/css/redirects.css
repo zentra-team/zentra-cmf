@@ -1,0 +1,140 @@
+.ztr-redirects-stats .card {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.ztr-redirects-search-toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    padding: 0.25rem 0;
+    font-size: 0.875rem;
+}
+.ztr-redirects-search-toggle .bi-chevron-down {
+    transition: transform 0.2s;
+}
+.ztr-redirects-search-toggle[aria-expanded='true'] .bi-chevron-down {
+    transform: rotate(180deg);
+}
+
+.ztr-redirects-info-banner {
+    font-size: 0.875rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.ztr-redirects-bulk-bar {
+    background-color: rgba(13, 202, 240, 0.08);
+    border-bottom: 1px solid rgba(13, 202, 240, 0.25);
+    font-size: 0.875rem;
+}
+
+.ztr-redirects-table th {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--bs-secondary-color);
+    font-weight: 600;
+}
+.ztr-redirects-col-checkbox {
+    width: 36px;
+}
+.ztr-redirects-col-type {
+    width: 70px;
+}
+.ztr-redirects-col-kind {
+    width: 110px;
+}
+.ztr-redirects-col-priority {
+    width: 100px;
+    text-align: center;
+}
+.ztr-redirects-col-hits {
+    width: 80px;
+    text-align: right;
+}
+.ztr-redirects-col-last {
+    width: 130px;
+}
+.ztr-redirects-col-status {
+    width: 100px;
+}
+.ztr-redirects-col-actions {
+    width: 130px;
+}
+
+.ztr-redirect-from code {
+    font-size: 0.85rem;
+    color: var(--bs-body-color);
+}
+.ztr-redirect-to code {
+    font-size: 0.8rem;
+    color: var(--bs-secondary-color);
+}
+.ztr-redirect-note {
+    font-size: 0.75rem;
+}
+
+.ztr-redirect-inactive {
+    opacity: 0.55;
+}
+
+.ztr-redirects-empty-icon {
+    font-size: 3rem;
+    opacity: 0.25;
+}
+.ztr-redirects-pagination {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+.ztr-redirects-pagination .pagination {
+    margin-bottom: 0;
+}
+
+.ztr-redirects-inspect-result {
+    margin-top: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+    font-size: 0.85rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.ztr-redirects-inspect-result.ztr-success {
+    background-color: rgba(25, 135, 84, 0.1);
+    border-color: rgba(25, 135, 84, 0.4);
+}
+.ztr-redirects-inspect-result.ztr-empty {
+    background-color: rgba(255, 255, 255, 0.04);
+}
+.ztr-redirects-inspect-result.ztr-error {
+    background-color: rgba(220, 53, 69, 0.1);
+    border-color: rgba(220, 53, 69, 0.4);
+}
+
+.ztr-redirect-cycle-alert {
+    font-size: 0.85rem;
+}
+
+.ztr-redirect-form-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.ztr-redirect-stats {
+    font-size: 0.85rem;
+}
+
+.ztr-redirects-referer {
+    display: inline-block;
+    max-width: 280px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: bottom;
+}
+
+.ztr-sort-link {
+    color: inherit;
+    text-decoration: none;
+}
+.ztr-sort-link:hover {
+    color: var(--bs-info);
+}
