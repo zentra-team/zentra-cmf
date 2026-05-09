@@ -1,0 +1,102 @@
+:root {
+    --ztr-bg: #0e0e1a;
+    --ztr-surface: #1a1a2e;
+    --ztr-border: #2d2d4e;
+    --ztr-purple: #7c5cbf;
+    --ztr-purple-hover: #9370db;
+    --ztr-text: #e0e0f0;
+    --ztr-text-muted: #888;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--ztr-bg);
+    color: var(--ztr-text);
+    font-family:
+        system-ui,
+        -apple-system,
+        sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.ztr-welcome-card {
+    background: var(--ztr-surface);
+    border: 1px solid var(--ztr-border);
+    border-radius: 1rem;
+    padding: 3rem 2.5rem;
+    max-width: 540px;
+    width: 100%;
+    text-align: center;
+}
+
+.ztr-welcome-icon {
+    width: 72px;
+    height: 72px;
+    background: linear-gradient(135deg, var(--ztr-purple), var(--ztr-purple-hover));
+    border-radius: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.75rem;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.ztr-welcome-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.ztr-welcome-title span {
+    color: var(--ztr-purple);
+}
+
+.ztr-welcome-subtitle {
+    color: var(--ztr-text-muted);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.ztr-btn-admin {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--ztr-purple);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.65rem 1.5rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition:
+        background 0.15s,
+        transform 0.1s;
+}
+
+.ztr-btn-admin:hover {
+    background: var(--ztr-purple-hover);
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+.ztr-welcome-footer {
+    margin-top: 2.5rem;
+    font-size: 0.8rem;
+    color: var(--ztr-text-muted);
+}
+
+.ztr-welcome-footer a {
+    color: var(--ztr-purple);
+    text-decoration: none;
+}
