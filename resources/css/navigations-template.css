@@ -1,0 +1,155 @@
+.nav-tpl-section {
+    border: 1px solid var(--ztr-border);
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+.nav-tpl-section-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.55rem 1rem 0.55rem 0.875rem;
+    background: linear-gradient(90deg, rgba(124, 92, 191, 0.18) 0%, rgba(124, 92, 191, 0.06) 100%);
+    border-left: 3px solid var(--ztr-purple);
+    cursor: pointer;
+    user-select: none;
+    font-weight: 600;
+    font-size: 0.8125rem;
+    transition: background 0.15s;
+}
+.nav-tpl-section-header:hover {
+    background: linear-gradient(90deg, rgba(124, 92, 191, 0.28) 0%, rgba(124, 92, 191, 0.1) 100%);
+}
+.nav-tpl-section-header .bi-chevron-down {
+    color: var(--ztr-purple);
+    font-size: 0.65rem;
+    transition: transform 0.2s;
+}
+.nav-tpl-section-header.collapsed .bi-chevron-down {
+    transform: rotate(-90deg);
+}
+.nav-tpl-section-body {
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-top: 1px solid var(--ztr-border);
+}
+
+.ace-tpl-editor {
+    width: 100%;
+    border: 1px solid var(--ztr-border);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: border-color 0.15s;
+    margin-top: 0.5rem;
+}
+.ace-tpl-editor:focus-within {
+    border-color: var(--ztr-border-focus);
+}
+
+.btn-tags-toggle {
+    background: none;
+    border: 1px solid #28a745;
+    color: #28a745;
+    font-size: 0.72rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.2rem;
+    transition:
+        color 0.15s,
+        border-color 0.15s,
+        background 0.15s;
+}
+.btn-tags-toggle:hover {
+    background: rgba(40, 167, 69, 0.12);
+    color: #48c967;
+    border-color: #48c967;
+}
+.btn-tags-toggle .bi-tags {
+    font-size: 0.7rem;
+}
+.btn-tags-toggle[aria-expanded='true'] .toggle-icon {
+    transform: rotate(180deg);
+}
+.toggle-icon {
+    transition: transform 0.2s;
+    font-size: 0.55rem;
+}
+
+.tpl-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+}
+.tpl-tags-sep {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin: 0.35rem 0 0.1rem;
+}
+.tpl-tags-sep::before,
+.tpl-tags-sep::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--ztr-border);
+    opacity: 0.6;
+}
+.tpl-tags-sep span {
+    font-size: 0.6rem;
+    color: var(--ztr-text-muted);
+    letter-spacing: 0.07em;
+    white-space: nowrap;
+}
+.tpl-tag {
+    font-size: 0.7rem;
+    font-family: monospace;
+    background: var(--ztr-bg-surface);
+    border: 1px solid var(--ztr-border);
+    color: #ffc107;
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.tpl-tag:hover {
+    border-color: #ffc107;
+    color: #ffe066;
+}
+
+.ztr-tpl-save-status {
+    font-size: 0.75rem;
+    color: var(--ztr-text-muted);
+}
+.ztr-tpl-tag-code {
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+.ztr-tpl-copy-icon {
+    font-size: 0.8rem;
+}
+.ztr-tpl-tooltip-icon {
+    font-size: 0.8rem;
+    cursor: default;
+}
+.ztr-tpl-group-btn {
+    font-size: 0.7rem;
+}
+.ztr-tpl-groups-select {
+    height: 80px;
+}
+.ztr-tpl-level-chevron {
+    font-size: 0.65rem;
+}
+.ztr-tpl-level-badge {
+    font-size: 0.65rem;
+    font-weight: 500;
+}
+.ztr-tpl-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+}

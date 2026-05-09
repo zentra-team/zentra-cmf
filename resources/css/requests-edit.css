@@ -1,0 +1,99 @@
+.rubric-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.82rem;
+    padding: 0.2rem 0.55rem;
+    border: 1px solid var(--ztr-border);
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    transition:
+        border-color 0.15s,
+        background 0.15s;
+}
+.rubric-chip:hover {
+    border-color: var(--ztr-purple-500);
+}
+.rubric-chip:has(input:checked) {
+    border-color: var(--ztr-purple-600);
+    background: rgba(139, 92, 246, 0.12);
+}
+.rubric-chip .form-check-input {
+    margin: 0;
+    width: 0.85em;
+    height: 0.85em;
+    cursor: pointer;
+}
+
+.cond-row {
+    display: grid;
+    grid-template-columns: 1fr 140px 80px 1fr 36px;
+    gap: 0.4rem;
+    align-items: center;
+    padding: 0.4rem 0.5rem;
+    background: var(--ztr-bg-card);
+    border: 1px solid var(--ztr-border);
+    border-radius: 5px;
+    margin-bottom: 0.35rem;
+}
+.cond-row:hover {
+    border-color: var(--ztr-purple-700);
+}
+.cond-drag {
+    cursor: grab;
+    color: var(--ztr-text-dim);
+}
+.cond-drag:active {
+    cursor: grabbing;
+}
+.cond-inactive {
+    opacity: 0.5;
+}
+
+.tpl-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    margin-bottom: 0.4rem;
+}
+.tpl-tag {
+    font-size: 0.7rem;
+    font-family: monospace;
+    background: var(--ztr-bg-surface);
+    border: 1px solid var(--ztr-border);
+    color: var(--ztr-purple-400);
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.tpl-tag:hover {
+    border-color: var(--ztr-purple-500);
+    color: var(--ztr-purple-300, #c4b5fd);
+}
+
+.btn-tags-toggle {
+    background: none;
+    border: 1px solid var(--ztr-border);
+    color: var(--ztr-text-muted);
+    font-size: 0.72rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.2rem;
+    transition:
+        color 0.15s,
+        border-color 0.15s;
+}
+.btn-tags-toggle:hover {
+    color: var(--ztr-purple-400);
+    border-color: var(--ztr-purple-500);
+}
+.btn-tags-toggle[aria-expanded='true'] .toggle-icon {
+    transform: rotate(180deg);
+}
+.toggle-icon {
+    transition: transform 0.2s;
+}
