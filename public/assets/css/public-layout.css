@@ -1,0 +1,113 @@
+:root {
+    --ztr-bg: #0e0e1a;
+    --ztr-surface: #1a1a2e;
+    --ztr-border: #2d2d4e;
+    --ztr-purple: #7c5cbf;
+    --ztr-purple-hover: #9370db;
+    --ztr-text: #e0e0f0;
+    --ztr-text-muted: #888;
+}
+
+body {
+    background-color: var(--ztr-bg);
+    color: var(--ztr-text);
+    font-family:
+        system-ui,
+        -apple-system,
+        sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.ztr-navbar {
+    background-color: var(--ztr-surface);
+    border-bottom: 1px solid var(--ztr-border);
+    padding: 0.75rem 0;
+}
+.ztr-navbar .navbar-brand {
+    color: var(--ztr-text);
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+.ztr-navbar .navbar-brand span {
+    color: var(--ztr-purple);
+}
+.ztr-navbar .nav-link {
+    color: var(--ztr-text-muted);
+    font-size: 0.9rem;
+    transition: color 0.15s;
+}
+.ztr-navbar .nav-link:hover {
+    color: var(--ztr-purple-hover);
+}
+
+main {
+    flex: 1;
+}
+.ztr-content {
+    padding: 2.5rem 0;
+}
+
+.ztr-document-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--ztr-text);
+    border-bottom: 1px solid var(--ztr-border);
+    padding-bottom: 0.75rem;
+}
+.ztr-field-label {
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    color: var(--ztr-text-muted);
+}
+.ztr-field-value {
+    color: var(--ztr-text);
+    line-height: 1.65;
+}
+.ztr-field-value img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.375rem;
+}
+
+.breadcrumb-item a {
+    color: var(--ztr-purple);
+    text-decoration: none;
+}
+.breadcrumb-item a:hover {
+    color: var(--ztr-purple-hover);
+    text-decoration: underline;
+}
+.breadcrumb-item.active {
+    color: var(--ztr-text-muted);
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    color: var(--ztr-border);
+}
+
+.ztr-footer {
+    background-color: var(--ztr-surface);
+    border-top: 1px solid var(--ztr-border);
+    padding: 1.25rem 0;
+    font-size: 0.85rem;
+    color: var(--ztr-text-muted);
+}
+.ztr-footer a {
+    color: var(--ztr-purple);
+    text-decoration: none;
+}
+.ztr-footer a:hover {
+    color: var(--ztr-purple-hover);
+}
+
+a {
+    color: var(--ztr-purple);
+}
+a:hover {
+    color: var(--ztr-purple-hover);
+}

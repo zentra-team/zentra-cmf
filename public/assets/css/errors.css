@@ -1,0 +1,94 @@
+:root {
+    --ztr-bg: #0e0e1a;
+    --ztr-surface: #1a1a2e;
+    --ztr-border: #2d2d4e;
+    --ztr-purple: #7c5cbf;
+    --ztr-purple-hover: #9370db;
+    --ztr-text: #e0e0f0;
+    --ztr-text-muted: #888;
+}
+
+body {
+    background-color: var(--ztr-bg);
+    color: var(--ztr-text);
+    font-family:
+        system-ui,
+        -apple-system,
+        sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.ztr-error-card {
+    background: var(--ztr-surface);
+    border: 1px solid var(--ztr-border);
+    border-radius: 1rem;
+    padding: 3rem 2.5rem;
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+}
+
+.ztr-error-icon {
+    font-size: 3.5rem;
+    color: var(--ztr-purple);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.ztr-error-code {
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1;
+    background: linear-gradient(135deg, var(--ztr-purple), var(--ztr-purple-hover));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+}
+
+.ztr-error-title {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.ztr-error-desc {
+    color: var(--ztr-text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.ztr-btn-home {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--ztr-purple);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.6rem 1.4rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition:
+        background 0.15s,
+        transform 0.1s;
+}
+
+.ztr-btn-home:hover {
+    background: var(--ztr-purple-hover);
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+.ztr-error-footer {
+    margin-top: 2rem;
+    font-size: 0.78rem;
+    color: var(--ztr-text-muted);
+}
