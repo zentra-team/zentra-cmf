@@ -1,0 +1,71 @@
+.ztr-lft-empty {
+    font-size: 0.875rem;
+}
+
+.ztr-lft-col-size {
+    width: 110px;
+}
+.ztr-lft-col-modified {
+    width: 160px;
+}
+.ztr-lft-col-actions {
+    width: 80px;
+}
+
+.ztr-lft-cell-path {
+    font-size: 0.8rem;
+    font-family: monospace;
+}
+.ztr-lft-cell-size {
+    font-size: 0.8rem;
+}
+.ztr-lft-cell-modified {
+    font-size: 0.8rem;
+}
+.ztr-lft-cell-actions {
+    white-space: nowrap;
+}
+
+.ztr-lft-modal-upload {
+    max-width: 480px;
+}
+
+.ztr-lft-dropzone {
+    border-style: dashed !important;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.ztr-lft-upload-icon {
+    font-size: 2.5rem;
+    opacity: 0.5;
+}
+.ztr-lft-upload-or {
+    font-size: 0.8rem;
+}
+.ztr-lft-upload-name {
+    font-size: 0.8rem;
+}
+
+.ztr-lft-progress {
+    height: 6px;
+}
+.ztr-lft-progress-label {
+    font-size: 0.8rem;
+}
+
+.ztr-lft-upload-error {
+    font-size: 0.8rem;
+    display: none;
+}
+.ztr-lft-create-error {
+    font-size: 0.8rem;
+    display: none;
+}
+
+.ztr-lft-delete-body {
+    font-size: 0.875rem;
+}
+
+.ztr-lft-modal-create {
+    max-width: 440px;
+}

@@ -1,0 +1,144 @@
+.rubric-drag-handle {
+    cursor: grab;
+    color: var(--ztr-text-dim);
+    padding: 0 0.25rem;
+    font-size: 1rem;
+}
+.rubric-drag-handle:active {
+    cursor: grabbing;
+}
+.sortable-ghost {
+    opacity: 0.4;
+    background: var(--ztr-bg-hover);
+}
+
+.tbl-input {
+    background: transparent;
+    border: 1px solid var(--ztr-purple-800);
+    border-radius: 4px;
+    padding: 0.2rem 0.4rem;
+    color: inherit;
+    font-size: 0.875rem;
+    width: 100%;
+    transition:
+        border-color 0.15s,
+        background 0.15s;
+}
+.tbl-input:hover {
+    border-color: var(--ztr-purple-600);
+}
+.tbl-input:focus {
+    border-color: var(--ztr-purple-500, #7c3aed);
+    background: var(--ztr-bg-card);
+    outline: none;
+}
+
+.tbl-select {
+    background: transparent;
+    border: 1px solid var(--ztr-purple-800);
+    border-radius: 4px;
+    padding: 0.2rem 0.4rem;
+    color: inherit;
+    font-size: 0.875rem;
+    width: 100%;
+    cursor: pointer;
+    transition:
+        border-color 0.15s,
+        background 0.15s;
+}
+.tbl-select:hover {
+    border-color: var(--ztr-purple-600);
+}
+.tbl-select:focus {
+    border-color: var(--ztr-purple-500, #7c3aed);
+    background: var(--ztr-bg-card);
+    outline: none;
+}
+
+.ztr-rubrics-card-header {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.ztr-rubrics-table {
+    table-layout: fixed;
+}
+.ztr-rubrics-table th.ztr-rubrics-col-id {
+    width: 36px;
+}
+.ztr-rubrics-table th.ztr-rubrics-col-drag {
+    width: 24px;
+}
+.ztr-rubrics-table th.ztr-rubrics-col-title {
+    width: 180px;
+}
+.ztr-rubrics-table th.ztr-rubrics-col-alias {
+    width: 130px;
+}
+.ztr-rubrics-table th.ztr-rubrics-col-color {
+    width: 50px;
+}
+.ztr-rubrics-table th.ztr-rubrics-col-layout {
+    width: 170px;
+}
+.ztr-rubrics-table th.ztr-rubrics-col-docs {
+    width: 80px;
+}
+.ztr-rubrics-table th.ztr-rubrics-col-fields {
+    width: 50px;
+}
+.ztr-rubrics-table th.ztr-rubrics-col-actions {
+    width: 210px;
+}
+
+.ztr-rubrics-small {
+    font-size: 0.8rem;
+}
+.ztr-rubrics-smaller {
+    font-size: 0.875rem;
+}
+
+.ztr-rubrics-color-input {
+    width: 32px;
+    height: 26px;
+    padding: 2px;
+    border: none;
+    background: transparent;
+}
+
+.ztr-rubrics-color-input-lg {
+    width: 40px;
+    height: 34px;
+}
+
+.ztr-rubrics-no-pointer {
+    pointer-events: none;
+}
+
+.ztr-rubrics-form-narrow {
+    max-width: 480px;
+}
+.ztr-rubrics-modal-dialog {
+    max-width: 440px;
+}
+
+.ztr-rubrics-alert-icon {
+    margin-top: -2px;
+}
+
+.ztr-rubrics-table > :not(caption) > * > td.text-end,
+.ztr-rubrics-table > :not(caption) > * > th.ztr-rubrics-col-actions {
+    padding-right: 1rem;
+}
+
+.ztr-rubrics-spinner-xs {
+    width: 0.9rem;
+    height: 0.9rem;
+}
+
+.ztr-rubric-actions-grid {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    gap: 0.25rem;
+    justify-content: end;
+}
